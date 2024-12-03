@@ -1,7 +1,5 @@
 # SudokuSolver
 
-**SudokuSolver** is a Python-based application designed to solve Sudoku puzzles using a backtracking algorithm. The application features a graphical user interface (GUI) created with PyQt6, allowing users to input puzzles manually, solve them, and visualize the solution in an interactive grid. The solver algorithm runs step-by-step, attempting to find the correct numbers for empty cells. The user can also switch between light and dark themes and interact with the puzzle grid to input values, erase them, and reset the puzzle. 
-
 ## Table of Contents
 
 - [Overview](#overview)
