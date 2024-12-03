@@ -84,7 +84,7 @@ To get started with the **SudokuSolver** application, follow these installation 
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/eldrionix/SudokuSolver.git
+   git clone https://github.com/takeshikodev/SudokuSolver.git
    cd SudokuSolver
    ```
 
