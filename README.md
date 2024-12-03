@@ -31,6 +31,7 @@
   - [Theme Toggle](#theme-toggle-1)
   - [User Interaction](#user-interaction)
   - [Error Handling](#error-handling)
+- [Example](#example)
 - [License](#license)
 
 ## Overview
@@ -187,6 +188,10 @@ Users interact with the application by selecting cells, entering numbers, and us
 ### Error Handling
 
 Error checking is performed when the user enters invalid numbers. If a conflict is detected, the application will highlight the affected cells and prevent the user from continuing until the error is resolved. The solver also includes error handling to manage unsolvable puzzles.
+
+## Example
+
+![Example](assets/example.gif)
 
 ## License
 
