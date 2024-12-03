@@ -5,6 +5,7 @@ from helpers.sudoku_solver import SudokuSolver
 from resources.styles import styles
 from widgets.theme_toggle import ThemeToggle
 
+
 class SudokuSolverWindow(QMainWindow):
     """Main window for the Sudoku Solver application."""
 
@@ -115,7 +116,6 @@ class SudokuSolverWindow(QMainWindow):
 
         main_layout.addLayout(right_side_layout, 1, 1)
 
-
     def on_number_button_click(self, number: str, btn: QPushButton):
         """Handle the click event for number buttons."""
         if self.eraser_mode:
@@ -125,7 +125,6 @@ class SudokuSolverWindow(QMainWindow):
 
         self.selected_number = number
         self.highlight_selected_number_button(btn)
-
 
     def on_sudoku_button_click(self, row: int, col: int):
         """Handle the click event for Sudoku grid buttons."""
@@ -141,13 +140,11 @@ class SudokuSolverWindow(QMainWindow):
             self.user_inputted.add((row, col))
             button.setStyleSheet(styles["user_input_cell"])
 
-
     def on_eraser_button_click(self):
         """Handle the click event for the eraser button."""
         self.selected_number = None
         self.eraser_mode = True
         self.setCursor(QCursor(Qt.CursorShape.CrossCursor))
-
 
     def highlight_selected_number_button(self, selected_button: QPushButton):
         """Highlight the selected number button."""
@@ -156,7 +153,6 @@ class SudokuSolverWindow(QMainWindow):
 
         selected_button.setStyleSheet(styles["selected_number_button"])
         self.selected_button = selected_button
-
 
     def on_reset_button_click(self):
         """Handle the click event for the reset button."""
@@ -167,14 +163,12 @@ class SudokuSolverWindow(QMainWindow):
             button.setStyleSheet(styles["user_input_cell"])
             button.setEnabled(True)
 
-
     def highlight_invalid_cells(self, positions):
         """Highlight invalid cells in the Sudoku grid."""
         for pos in positions:
             row, col = pos
             button = self.sudoku_buttons[(row, col)]
             button.setStyleSheet(styles["invalid_cell"])
-
 
     def on_solve_button_click(self):
         """Handle the click event for the solve button."""
@@ -210,11 +204,9 @@ class SudokuSolverWindow(QMainWindow):
         except ValueError:
             self.show_error_dialog("Invalid Input", "Only numbers from 1 to 9 are allowed.")
 
-
     def show_error_dialog(self, title: str, message: str):
         """Show an error dialog with the specified title and message."""
         QMessageBox.critical(self, title, message)
-
 
     def switch_theme(self, theme: str):
         """Switch the theme between light and dark."""
@@ -229,7 +221,6 @@ class SudokuSolverWindow(QMainWindow):
         self.animation.finished.connect(self.apply_theme)
 
         self.animation.start()
-        
         
     def apply_theme(self):
         """Apply the new theme and restore full opacity."""
