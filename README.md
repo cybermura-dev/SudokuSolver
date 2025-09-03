@@ -84,7 +84,7 @@ To get started with the **SudokuSolver** application, follow these installation 
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/takeshikodev/SudokuSolver.git
+   git clone https://github.com/cybermura-dev/SudokuSolver.git
    cd SudokuSolver
    ```
 
@@ -195,4 +195,4 @@ Error checking is performed when the user enters invalid numbers. If a conflict 
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-Copyright (c) 2025 Takeshiko 
+Copyright (c) 2025 cybermura 
